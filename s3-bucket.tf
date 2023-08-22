@@ -2,7 +2,7 @@ module "s3_bucket" {
   source = "terraform-aws-modules/s3-bucket/aws"
   version = "2.8.0"
 
-  bucket_bucket_prefix = var.prefix
+  bucket_prefix = var.prefix
   acl    = "private"
 
   control_object_ownership = true
